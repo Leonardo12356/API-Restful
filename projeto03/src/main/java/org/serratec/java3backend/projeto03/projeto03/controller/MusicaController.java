@@ -20,10 +20,16 @@ public class MusicaController {
 	@Autowired
 	MusicaService musicaService;
 	
-	@GetMapping("/lista/{posicaoLista}")
-	public List<CasaDeMusica> getMusica(@PathVariable int posicaoLista){
+	@GetMapping("/lista")
+	public List<CasaDeMusica> getMusica(){
 		return musicaService.musicaTodo();
 	}
+	
+	@GetMapping("/buscar/{idTodo}")
+	public CasaDeMusica buscarId(@PathVariable Integer idTodo) {
+		return musicaService.buscarPorId(idTodo);
+	}
+	
 	
 	@PostMapping("/adicionar")
 	public void adicionar(@RequestBody CasaDeMusica musica) {
