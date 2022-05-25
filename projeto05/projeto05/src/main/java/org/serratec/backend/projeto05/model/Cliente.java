@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -21,9 +23,10 @@ public class Cliente {
 	private Integer idCliente;
 	
 	@Column(name="cliente_tx_nome")
+	@NotNull
 	private String nome;
-	
-	@Column(name="cliente_tx_cpf")
+	@Size(max = 11)
+	@Column(name="cliente_tx_cpf", unique = true)
 	private String cpf;
 	
 	@Column(name="cliente_tx_numero_telefone")
