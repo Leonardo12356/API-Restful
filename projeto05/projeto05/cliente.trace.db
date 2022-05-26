@@ -1,3 +1,21 @@
 2022-05-20 19:26:57 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENTES" not found; SQL statement:
 SELECT * FROM CLIENTES [42102-212]
+2022-05-25 20:06:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CARTAO CARTAO [*]CARTAO"; SQL statement:
+SELECT * FROM CARTAO CARTAO CARTAO [42000-212]
+2022-05-25 20:06:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CARTAO CARTAO [*]CARTAO CLIENTE"; SQL statement:
+SELECT * FROM CARTAO CARTAO CARTAO CLIENTE [42000-212]
+2022-05-25 20:18:04 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]* FROM CLIENTE"; expected "identifier"; SQL statement:
+delete * FROM CLIENTE [42001-212]
+2022-05-25 20:18:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop [*]* FROM CLIENTE"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+drop * FROM CLIENTE [42001-212]
+2022-05-25 20:18:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]CLIENTE  * FROM CLIENTE"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+CLIENTE  * FROM CLIENTE [42001-212]
+2022-05-25 20:18:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]CLIENTE  * FROM CLIENTE"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+CLIENTE  * FROM CLIENTE [42001-212]

@@ -43,7 +43,7 @@ public class LivroService {
 		Livro livro = new Livro();
 		transformarDTOEmModel(livro, livroDTO);
 		livroRepository.save(livro);
-		return "O livro criado foi com uma Id; " + livro.getIdLivro();
+		return "O livro foi salvo com uma Id; " + livro.getIdLivro();
 	}
 	
 	public LivroDTO buscarPorId(Integer idLivro) throws LivroException{

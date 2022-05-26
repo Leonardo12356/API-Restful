@@ -1,5 +1,6 @@
 package org.serratec.backend.projeto05.Controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.serratec.backend.projeto05.DTO.CartaoDTO;
@@ -23,6 +24,12 @@ public class CartaoController {
 
 	@Autowired
 	CartaoService cartaoService;
+	
+	@GetMapping("/leitor")
+	public ResponseEntity<Void> leitor() throws IOException{
+		cartaoService.leitor();
+		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+	}
 	
 	@PostMapping("/salvar")
 	public ResponseEntity<String> salvar(@RequestBody CartaoDTO cartaoDTO){

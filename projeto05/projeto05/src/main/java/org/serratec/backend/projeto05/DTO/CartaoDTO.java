@@ -12,6 +12,8 @@ public class CartaoDTO implements Serializable {
 	private String numeroCartao;
 	private String nomeTitular;
 	private LocalDate dataValidade;
+	private Integer idCliente;
+	private String nomeCliente;
 	
 	public CartaoDTO() {
 		
@@ -55,6 +57,22 @@ public class CartaoDTO implements Serializable {
 
 	public void setDataValidade(LocalDate dataValidade) {
 		this.dataValidade = dataValidade;
+	}
+
+	public Integer getIdCliente() {
+		return idCliente;
+	}
+
+	public void setIdCliente(Integer idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
 	}
 	
 	

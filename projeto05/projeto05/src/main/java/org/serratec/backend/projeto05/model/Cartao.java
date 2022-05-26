@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -38,9 +40,30 @@ public class Cartao implements Serializable {
 	@NotNull
 	private LocalDate dataValidade;
 	
+	@ManyToOne
+	@JoinColumn(name="cliente_id", referencedColumnName="cliente_cd_id") //,updatable = false, insertable = false)
+	private Cliente cliente;
+	
+//	@ManyToMany
+//	@JoinTable(name = "cliente_rel_aviso", joinColumns= {@JoinColumn(name="cartao_id")},
+//	inverseJoinColumns = {@JoinColumn(name="aviso_id")})
+//	private List<Aviso> listaAviso;
+	
+	
 	public Cartao() {
 		
 	}
+	
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+
 
 	public Integer getIdCartao() {
 		return idCartao;
@@ -81,8 +104,6 @@ public class Cartao implements Serializable {
 	public void setDataValidade(LocalDate dataValidade) {
 		this.dataValidade = dataValidade;
 	}
-	
-	
 	
 
 }

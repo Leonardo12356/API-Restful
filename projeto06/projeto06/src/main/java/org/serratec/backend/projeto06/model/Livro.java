@@ -8,7 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -35,9 +38,11 @@ public class Livro {
 	@Column(name = "livro_tx_autor")
 	@Size(min = 10, max = 40)
 	private String autor;
-
+	
+	@Past // aceita somente a data anterior a de hoje
 	@Column(name = "livro_dt_publicacao")
 	@DateTimeFormat(pattern = "yyyy-mm-dd")
+	@Temporal(TemporalType.DATE)
 	private Date pubLivro;
 
 	public Livro() {

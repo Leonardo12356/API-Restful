@@ -1,5 +1,9 @@
 package org.serratec.backend.projeto05.service;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -8,6 +12,7 @@ import org.serratec.backend.projeto05.DTO.CartaoDTO;
 import org.serratec.backend.projeto05.exception.CartaoException;
 import org.serratec.backend.projeto05.model.Cartao;
 import org.serratec.backend.projeto05.repository.CartaoRepository;
+import org.serratec.backend.projeto05.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +21,26 @@ public class CartaoService {
 
 	@Autowired
 	CartaoRepository cartaoRepository;
+	
+	@Autowired
+	ClienteRepository clienteRepository;
+	
+	public void leitor() throws IOException{
+		BufferedReader buffReader = new BufferedReader(new FileReader(""));
+		String linha = buffReader.readLine();
+		while(linha != null) {
+			String [] dados = linha.split(";");
+			Cartao cartao = new Cartao();
+			cartao.setLimiteCartao(Double.parseDouble(dados[0]));
+			cartao.setNumeroCartao(dados[1]);
+			cartao.setNomeTitular(dados[2]);
+			cartao.setDataValidade(LocalDate.parse(dados[3]));
+			cartao.setCliente(clienteRepository.findById(Integer.parseInt(dados[4])).get());
+			cartaoRepository.save(cartao);
+			linha = buffReader.readLine();
+		}
+		buffReader.close();
+	}
 
 	public CartaoDTO transformarModelEmDTO(Cartao cartao, CartaoDTO cartaoDTO) {
 
@@ -24,7 +49,11 @@ public class CartaoService {
 		cartaoDTO.setLimiteCartao(cartao.getLimiteCartao());
 		cartaoDTO.setNomeTitular(cartao.getNomeTitular());
 		cartaoDTO.setNumeroCartao(cartao.getNumeroCartao());
-
+		if(cartao.getCliente() != null) {
+			cartaoDTO.setNomeCliente(cartao.getCliente().getNome());			
+		}
+		
+		
 		return cartaoDTO;
 	}
 
@@ -35,6 +64,10 @@ public class CartaoService {
 		cartao.setLimiteCartao(cartaoDTO.getLimiteCartao());
 		cartao.setNomeTitular(cartaoDTO.getNomeTitular());
 		cartao.setNumeroCartao(cartaoDTO.getNumeroCartao());
+		
+		if(cartaoDTO.getIdCliente() != null) {
+			cartao.setCliente(clienteRepository.findById(cartaoDTO.getIdCliente()).get());
+		}
 
 		return cartao;
 
