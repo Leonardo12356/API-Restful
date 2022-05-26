@@ -34,7 +34,7 @@ public class LivroController {
 		return ResponseEntity.ok(livroService.buscarPorId(idLivro));
 	}
 	
-	@DeleteMapping("/idLivro")
+	@DeleteMapping("/deletar/{idLivro}")
 	public ResponseEntity<Void> deletar(@PathVariable Integer idLivro){
 		livroService.deletar(idLivro);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
