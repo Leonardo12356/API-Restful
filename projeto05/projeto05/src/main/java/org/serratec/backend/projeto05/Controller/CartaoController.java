@@ -3,8 +3,11 @@ package org.serratec.backend.projeto05.Controller;
 import java.io.IOException;
 import java.util.List;
 
+import javax.mail.MessagingException;
+
 import org.serratec.backend.projeto05.DTO.CartaoDTO;
 import org.serratec.backend.projeto05.exception.CartaoException;
+import org.serratec.backend.projeto05.exception.EmailException;
 import org.serratec.backend.projeto05.service.CartaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,8 +34,15 @@ public class CartaoController {
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
 	}
 	
+	@GetMapping("/count")
+	public ResponseEntity<Integer> count(){
+		return ResponseEntity.ok(cartaoService.count());
+	}
+	
+	
+	
 	@PostMapping("/salvar")
-	public ResponseEntity<String> salvar(@RequestBody CartaoDTO cartaoDTO){
+	public ResponseEntity<String> salvar(@RequestBody CartaoDTO cartaoDTO) throws MessagingException, EmailException{
 		return ResponseEntity.ok(cartaoService.salvar(cartaoDTO));
 	}
 	

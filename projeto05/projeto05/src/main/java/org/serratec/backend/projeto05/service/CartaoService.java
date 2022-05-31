@@ -8,8 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import javax.mail.MessagingException;
+
 import org.serratec.backend.projeto05.DTO.CartaoDTO;
 import org.serratec.backend.projeto05.exception.CartaoException;
+import org.serratec.backend.projeto05.exception.EmailException;
 import org.serratec.backend.projeto05.model.Cartao;
 import org.serratec.backend.projeto05.repository.CartaoRepository;
 import org.serratec.backend.projeto05.repository.ClienteRepository;
@@ -24,6 +27,9 @@ public class CartaoService {
 	
 	@Autowired
 	ClienteRepository clienteRepository;
+	
+	@Autowired
+	EmailService emailService;
 	
 	public void leitor() throws IOException{
 		BufferedReader buffReader = new BufferedReader(new FileReader(""));
@@ -53,7 +59,6 @@ public class CartaoService {
 			cartaoDTO.setNomeCliente(cartao.getCliente().getNome());			
 		}
 		
-		
 		return cartaoDTO;
 	}
 
@@ -65,18 +70,20 @@ public class CartaoService {
 		cartao.setNomeTitular(cartaoDTO.getNomeTitular());
 		cartao.setNumeroCartao(cartaoDTO.getNumeroCartao());
 		
+		
 		if(cartaoDTO.getIdCliente() != null) {
 			cartao.setCliente(clienteRepository.findById(cartaoDTO.getIdCliente()).get());
-		}
+		} 
 
 		return cartao;
 
 	}
 
-	public String salvar(CartaoDTO cartaoDTO) {
+	public String salvar(CartaoDTO cartaoDTO) throws MessagingException, EmailException{
 		Cartao cartao = new Cartao();
 		transformarDTOEmModel(cartao, cartaoDTO);
 		cartaoRepository.save(cartao);
+		emailService.emailTeste(cartaoDTO);
 		return "O cartao criado foi com id: " + cartao.getIdCartao();
 	}
 
@@ -122,7 +129,7 @@ public class CartaoService {
 	}
 	
 	public List<CartaoDTO> buscarTodos(){
-		List<Cartao> listaCartaoModel = cartaoRepository.findAll();
+		List<Cartao> listaCartaoModel = cartaoRepository.buscarTodosDesc();
 		List<CartaoDTO> listaCartaoDTO = new ArrayList<>();
 		for (Cartao cartao : listaCartaoModel) {
 			CartaoDTO cartaoDTO = new CartaoDTO();
@@ -142,5 +149,9 @@ public class CartaoService {
 			listaCartao.add(cartao);
 		}
 		cartaoRepository.saveAll(listaCartao);
+	}
+	
+	public Integer count() {
+		return cartaoRepository.numeroTabela();
 	}
 }

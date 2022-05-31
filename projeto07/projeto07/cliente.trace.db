@@ -1,0 +1,824 @@
+2022-05-31 01:32:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVICO" not found; SQL statement:
+select 
+* from servico [42102-212]
+2022-05-31 01:32:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVICO" not found; SQL statement:
+select 
+* from servico [42102-212]
+2022-05-31 01:52:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT \000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO = c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+SELECT 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO = c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 01:54:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT \000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+SELECT 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 01:55:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT \000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+SELECT 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 01:55:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT \000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+SELECT 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 01:55:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT \000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+SELECT 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 01:55:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select\000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 01:55:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "fusca"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 01:55:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "fusca"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 01:57:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "fusca"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:02:42 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "fusca"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:05:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete  FROM SERV_PRESTADO where SERVICO_CD_ID [*]1"; SQL statement:
+delete  FROM SERV_PRESTADO where SERVICO_CD_ID 1 [42000-212]
+2022-05-31 02:08:06 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Bugati"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:12:52 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Bugati"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:13:12 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Bugati"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:17:24 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Bugati"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:18:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM SERV_PRESTADO \000d\000ac2[*].CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000aFROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID)"; SQL statement:
+SELECT * FROM SERV_PRESTADO 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 02:19:18 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "fusca"; SQL statement:
+SELECT 
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+FROM SERV_PRESTADO s join carro c on(s.SERVICO_TX_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_CD_ID) [22018-212]
+2022-05-31 02:24:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select \000d\000a* [*]form serv_prestado"; SQL statement:
+select 
+* form serv_prestado [42000-212]
+2022-05-31 02:37:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select\000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000afrom serv_prestado s join carro c on(s.CARRO_CD_ID=c.CARRO_CD_ID) \000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID= c.CLIENTE_CD_ID)"; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico
+s.SERVICO_VALOR as valor
+from serv_prestado s join carro c on(s.CARRO_CD_ID=c.CARRO_CD_ID) 
+join cliente c2 on(c2.CLIENTE_CD_ID= c.CLIENTE_CD_ID) [42000-212]
+2022-05-31 02:54:16 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_CARRO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aSERV_PRESTADO s join carro c on(s.SERVICO_CARRO= c.CARRO_CD_ID)\000d\000a join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_CARRO as servico
+s.SERVICO_VALOR as valor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO= c.CARRO_CD_ID)
+ join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 02:57:08 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CARRO CLIENTE [*]SERV_PRESTADO"; SQL statement:
+SELECT * FROM CARRO CLIENTE SERV_PRESTADO [42000-212]
+2022-05-31 03:02:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as cliente,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_CARRO as servico\000d\000a[*]s.SERVICO_VALOR as valor\000d\000aSERV_PRESTADO s join carro c on(s.SERVICO_CARRO= c.CARRO_CD_ID)\000d\000a join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_CARRO as servico
+s.SERVICO_VALOR as valor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO= c.CARRO_CD_ID)
+ join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:02:13 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000a\000d\000aSERV_PRESTADO s [*]join carro c on(s.SERVICO_CARRO= c.CARRO_CD_ID)\000d\000a join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO= c.CARRO_CD_ID)
+ join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:09:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a[*]SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:12:15 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a[*]SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:12:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as servicovalor\000d\000a[*]SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as servicovalor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:12:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as servicovalor\000d\000a[*]SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as servicovalor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:12:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C2.CLIENTE_TX_NOME" not found; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-31 03:12:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42001-212]
+2022-05-31 03:13:08 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor,\000d\000aSERV_PRESTADO s [*]join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:13:35 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor,\000d\000aSERV_PRESTADO s, [*]join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; expected "*, INTERSECTS, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s, join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42001-212]
+2022-05-31 03:13:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor,\000d\000aSERV_PRESTADO s [*]join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:13:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor,\000d\000aSERV_PRESTADO s [*](s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s (s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:14:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor,\000d\000aSERV_PRESTADO s \000d\000a[*]join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s 
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:14:18 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C2.CLIENTE_TX_NOME" not found; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-31 03:14:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "C2" not found; SQL statement:
+SELECT from
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor,
+SERV_PRESTADO s [90079-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1853)
+	at org.h2.command.Parser.readTableReference(Parser.java:2359)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2810)
+	at org.h2.command.Parser.parseSelect(Parser.java:2917)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2800)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2667)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2646)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2639)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2632)
+	at org.h2.command.Parser.parseQuery(Parser.java:2593)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-31 03:14:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENTE_TX_NOME" not found; SQL statement:
+SELECT from
+CLIENTE_TX_NOME as nome,
+MODELO_TX_CARRO as modelo,
+SERVICO_TX_SERVICO as servico,
+SERVICO_VALOR as valor,
+SERV_PRESTADO [42102-212]
+2022-05-31 03:15:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a[*]SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+SERV_PRESTADO s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:15:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a[*]serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:15:35 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a[*]serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:15:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a [*]serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+ serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:15:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT\000d\000ac2.CLIENTE_TX_NOME as nome,\000d\000ac.MODELO_TX_CARRO as modelo,\000d\000as.SERVICO_TX_SERVICO as servico,\000d\000as.SERVICO_VALOR as valor\000d\000a [*]serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)\000d\000ajoin cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO)"; SQL statement:
+SELECT
+c2.CLIENTE_TX_NOME as nome,
+c.MODELO_TX_CARRO as modelo,
+s.SERVICO_TX_SERVICO as servico,
+s.SERVICO_VALOR as valor
+ serv_prestado s join carro c on(s.SERVICO_CARRO=c.CARRO_CD_ID)
+join cliente c2 on(c2.CLIENTE_CD_ID=c.CLIENTE_PROPRIETARIO) [42000-212]
+2022-05-31 03:16:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVICO" not found; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.CARRO_TX_MODELO as modelo,
+s.SERVICO_TX_DESCRICAO as descricaoServico,
+s.SERVICO_NU_VALOR as valor
+from servico s join carro c on(s.servico_carro=c.carro_cd_id)
+join cliente c2 on(c2.cliente_cd_id=c.CARRO_CLIENTE_PROPRIETARIO)
+order by s.SERVICO_CD_ID 
+desc [42102-212]
+2022-05-31 03:17:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C.CARRO_TX_MODELO" not found; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.CARRO_TX_MODELO as modelo,
+s.SERVICO_TX_SERVICO as Servico,
+s.SERVICO_NU_VALOR as valor
+from serv_prestado s join carro c on(s.servico_carro=c.carro_cd_id)
+join cliente c2 on(c2.cliente_cd_id=c.CARRO_CLIENTE_PROPRIETARIO)
+order by s.SERVICO_CD_ID 
+desc [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-31 03:17:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C.CARRO_TX_MODELO" not found; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.CARRO_TX_MODELO as modelo,
+s.SERVICO_TX_SERVICO as Servico,
+s.SERVICO_NU_VALOR as valor
+from serv_prestado s join carro c on(s.servico_carro=c.carro_cd_id)
+join cliente c2 on(c2.cliente_cd_id=c.CLIENTE_PROPRIETARIO)
+order by s.SERVICO_CD_ID 
+desc [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-31 03:17:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C.CARRO_TX_MODELO" not found; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.CARRO_TX_MODELO as modelo,
+s.SERVICO_TX_SERVICO as Servico,
+s.SERVICO_NU_VALOR as valor
+from serv_prestado s join carro c on(s.servico_carro=c.carro_cd_id)
+join cliente c2 on(c2.cliente_cd_id=c.CLIENTE_PROPRIETARIO)
+order by s.SERVICO_CD_ID 
+desc [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-31 03:17:52 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "S.SERVICO_NU_VALOR" not found; SQL statement:
+select
+c2.CLIENTE_TX_NOME as cliente,
+c.MODELO_TX_CARRO  as modelo,
+s.SERVICO_TX_SERVICO as Servico,
+s.SERVICO_NU_VALOR as valor
+from serv_prestado s join carro c on(s.servico_carro=c.carro_cd_id)
+join cliente c2 on(c2.cliente_cd_id=c.CLIENTE_PROPRIETARIO)
+order by s.SERVICO_CD_ID 
+desc [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:574)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
