@@ -129,7 +129,7 @@ public class CartaoService {
 	}
 	
 	public List<CartaoDTO> buscarTodos(){
-		List<Cartao> listaCartaoModel = cartaoRepository.buscarTodosDesc();
+		List<Cartao> listaCartaoModel = cartaoRepository.findAll();
 		List<CartaoDTO> listaCartaoDTO = new ArrayList<>();
 		for (Cartao cartao : listaCartaoModel) {
 			CartaoDTO cartaoDTO = new CartaoDTO();
@@ -151,7 +151,7 @@ public class CartaoService {
 		cartaoRepository.saveAll(listaCartao);
 	}
 	
-	public Integer count() {
-		return cartaoRepository.numeroTabela();
-	}
+//	public Integer count() {
+//		return cartaoRepository.numeroTabela();
+//	}
 }

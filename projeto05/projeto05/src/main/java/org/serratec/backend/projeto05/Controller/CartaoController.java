@@ -34,10 +34,10 @@ public class CartaoController {
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
 	}
 	
-	@GetMapping("/count")
-	public ResponseEntity<Integer> count(){
-		return ResponseEntity.ok(cartaoService.count());
-	}
+//	@GetMapping("/count")
+//	public ResponseEntity<Integer> count(){
+//		return ResponseEntity.ok(cartaoService.count());
+//	}
 	
 	
 	
