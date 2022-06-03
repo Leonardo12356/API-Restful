@@ -57,7 +57,7 @@ public class UsuarioService {
 	
 	public Integer salvar(UsuarioDTO usuarioDTO) {
 		Usuario usuario = new Usuario();
-		mapToDTO(usuario, usuarioDTO);
+		mapToModel(usuario, usuarioDTO);
 		uRepository.save(usuario);
 		return usuario.getIdUsuario();
 		

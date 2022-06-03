@@ -31,11 +31,7 @@ public class JwtWebConfig extends WebSecurityConfigurerAdapter {
 		auth.userDetailsService(usuarioDetalhe).passwordEncoder(passwordEncoder());
 	}
 	
-	//3 passo
-//	@Bean
-//	public PasswordEncoder codificarSenha() {	
-//		return NoOpPasswordEncoder.getInstance();
-//	}
+
 	
 	
 	@Bean
@@ -59,7 +55,7 @@ public class JwtWebConfig extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity web) throws Exception {
 		web
         .ignoring()
-        .antMatchers("/h2-console/**","/swagger-ui/**","/swagger-ui.html**","/v2/api-docs**","/swagger-resources/**");
+        .antMatchers("/h2-console/**","/swagger-ui/**","/swagger-ui.html**","/v2/api-docs","/swagger-resources/**");
 	}
 	
 	@Override
